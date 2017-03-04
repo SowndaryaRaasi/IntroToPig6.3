@@ -1,0 +1,27 @@
+                                    Introduction to Pig 
+                                       Assignment 6.3
+
+1.LOAD:The load command is used to load the data from the file system.
+                      eg: X=LOAD 'abc.txt';
+
+2.STORE:The store command  is used to save the relation in the file system.
+                       eg:STORE S INTO 'abc.txt' USING PigStorage ('*');
+
+3.DUMP:The DUMP command is used to display the results to the screen.
+                       eg:DUMP x;
+
+4.FOREACH:The FOREACH command is used to generate the data transformations based on colums of data   
+                       eg: Y = FOREACH X GENERATE file1;
+
+5.FILTER:The FILTER command is used to remove the unwanted rows from a relation.
+                It filters data to get processed by working on tuples,rows and is similar to where in sql. 
+                       eg:T=FILTER S BY age>23;
+
+6.GROUP BY:The GROUP BY command is used to group the data in a single relation.
+	     eg:P=GROUP X BY age;
+
+7.ORDER BY:The ORDER BY command is used to arrange a relation in a sorted order.
+	     eg:X=ORDER X BY S;
+
+8.DESCRIBE:The DESCRIBE command is used to schema of a relation.
+	     eg:DESCRIBE X;
